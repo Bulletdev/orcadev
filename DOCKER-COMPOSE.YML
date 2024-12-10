@@ -1,0 +1,29 @@
+version: '3.8'
+services:
+  database:
+    image: postgres:13
+    environment:
+      POSTGRES_DB: orcadev_db
+      POSTGRES_USER: usuario
+      POSTGRES_PASSWORD: senha
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  backend:
+    build: ./backend
+    depends_on:
+      - database
+    ports:
+      - "3000:3000"
+    environment:
+      - DATABASE_URL=postgresql://usuario:senha@database:5432/orcadev_db?schema=public
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "4200:4200"
+
+volumes:
+  postgres_data:

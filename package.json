@@ -1,0 +1,30 @@
+{
+  "name": "orcadev",
+  "version": "1.0.0",
+  "description": "A aplicação tem como principal objetivo **facilitar a criação de orçamentos detalhados** para projetos de desenvolvimento de software. Ela permite a estimativa de custos com base em parâmetros como **tempo, recursos humanos e tecnologias** utilizadas, otimizando o processo de planejamento.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nestjs/common": "^10.4.15",
+    "@nestjs/core": "^10.4.15",
+    "@nestjs/jwt": "^10.2.0",
+    "@nestjs/passport": "^10.0.3",
+    "@prisma/client": "^6.0.1",
+    "bcrypt": "^5.1.1",
+    "passport-jwt": "^4.0.1",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/node": "^22.10.1",
+    "@types/passport-jwt": "^4.0.1",
+    "prisma": "^6.0.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.7.2"
+  }
+}

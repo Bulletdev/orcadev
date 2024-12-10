@@ -1,0 +1,82 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id        String   @id @default(uuid())
+  email     String   @unique
+  name      String
+  role      UserRole
+  projects  Project[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Project {
+  id          String   @id @default(uuid())
+  name        String
+  description String?
+  client      Client   @relation(fields: [clientId], references: [id])
+  clientId    String
+  user        User     @relation(fields: [userId], references: [id])
+  userId      String
+  status      ProjectStatus
+  budget      Float
+  startDate   DateTime
+  endDate     DateTime?
+  tasks       Task[]
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+enum UserRole {
+  ADMIN
+  MANAGER
+  DEVELOPER
+  CLIENT
+}
+
+enum ProjectStatus {
+  PLANNING
+  IN_PROGRESS
+  COMPLETED
+  CANCELLED
+}
+
+model Client {
+  id          String    @id @default(uuid())
+  name        String
+  email       String    @unique
+  phone       String?
+  projects    Project[]
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+}
+
+model Task {
+  id          String      @id @default(uuid())
+  name        String
+  description String?
+  project     Project     @relation(fields: [projectId], references: [id])
+  projectId   String
+  status      TaskStatus
+  assignedTo  User        @relation(fields: [userId], references: [id])
+  userId      String
+  startDate   DateTime
+  endDate     DateTime?
+  estimatedHours Float
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+}
+
+enum TaskStatus {
+  TODO
+  IN_PROGRESS
+  REVIEW
+  DONE
+}
