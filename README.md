@@ -1,4 +1,4 @@
-# OrçaDEV Orçamento de Desenvolvimento de Software 💻📊
+# OrçaDEV - Desenvolvimento de Software 💻📊
 
 ## 📌 Objetivo da Aplicação
 A aplicação tem como principal objetivo **facilitar a criação de orçamentos detalhados** para projetos de desenvolvimento de software. Ela permite a estimativa de custos com base em parâmetros como **tempo, recursos humanos e tecnologias** utilizadas, otimizando o processo de planejamento.
