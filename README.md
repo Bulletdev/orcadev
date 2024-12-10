@@ -15,21 +15,66 @@ A aplicação tem como principal objetivo **facilitar a criação de orçamentos
 
 ---
 
-## 🛠️ Requisitos Técnicos
-### 🔧 **Frontend**: 
-- Frameworks como React, Angular ou Vue.js.
+## 🛠️Estruturado Projeto: 
+<details>
+  
+  ```
+OrcaDEV/
+│
+├── backend/
+│   ├── src/
+│   │   ├── modules/
+│   │   │   ├── auth/
+│   │   │   ├── projects/
+│   │   │   ├── clients/
+│   │   │   ├── tasks/
+│   │   │   └── reports/
+│   │   ├── shared/
+│   │   │   ├── dto/
+│   │   │   ├── interfaces/
+│   │   │   └── utils/
+│   │   ├── config/
+│   │   └── app.module.ts
+│   ├── prisma/
+│   │   └── schema.prisma
+│   ├── tests/
+│   ├── Dockerfile
+│   └── package.json
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── auth/
+│   │   │   ├── projects/
+│   │   │   ├── clients/
+│   │   │   ├── tasks/
+│   │   │   └── reports/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   ├── store/
+│   │   │   ├── reducers/
+│   │   │   └── actions/
+│   │   ├── hooks/
+│   │   ├── utils/
+│   │   └── App.tsx
+│   ├── public/
+│   ├── Dockerfile
+│   └── package.json
+│
+├── docs/
+│   ├── api/
+│   ├── architecture/
+│   └── user-guide/
+│
+├── docker-compose.yml
+├── kubernetes/
+│   ├── deployment.yml
+│   └── service.yml
+│
+└── README.md
+  ```
 
-### 🔙 **Backend**: 
-- Implementação com Node.js, Django ou Ruby on Rails.
-
-### 💾 **Banco de Dados**: 
-- Bancos relacionais (MySQL, PostgreSQL) ou não relacionais (MongoDB).
-
-### 🔒 **Autenticação e Autorização**: 
-- Sistemas de login e controle de acesso para garantir segurança e integridade.
-
-### 🔌 **API**: 
-- APIs RESTful para comunicação entre frontend e backend.
+</details>
 
 ---
 
@@ -47,31 +92,6 @@ A aplicação tem como principal objetivo **facilitar a criação de orçamentos
 - **Teste e Validação**: Testes de funcionalidade e correção de bugs (2 semanas).
 - **Lançamento**: Implementação e lançamento da versão inicial (2 semanas).
 - **Manutenção e Atualizações**: Suporte contínuo e adição de novas funcionalidades (contínuo).
-
----
-
-## 👥 Equipe Necessária
-- **Gerente de Projeto**: Coordenação das atividades e acompanhamento do cumprimento dos prazos.
-- **Desenvolvedores Frontend e Backend**: Responsáveis pela implementação das funcionalidades.
-- **Designer UX/UI**: Criação de uma interface amigável e intuitiva.
-- **Analista de QA**: Garantia da qualidade e testes contínuos.
-
----
-
-## 💰 Orçamento Estimado
-### 💻 **Custos de Desenvolvimento**:
-- Salários da equipe, ferramentas de desenvolvimento, licenças de software.
-
-### 🌐 **Custos Operacionais**:
-- Hospedagem, manutenção e suporte contínuo da aplicação.
-
----
-
-## 🗂️ Módulo de Gerenciamento de Tarefas e Projetos
-- **Criação e Atribuição de Tarefas**: Definir tarefas detalhadas e atribuí-las aos membros da equipe.
-- **Monitoramento de Progresso**: Acompanhar o andamento de tarefas e projetos em tempo real.
-- **Calendário e Prazos**: Gerenciar prazos e marcos importantes através de um calendário integrado.
-- **Notificações e Alertas**: Envio de notificações para atualizações de tarefas e lembretes de prazos.
 
 ---
 
