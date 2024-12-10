@@ -86,15 +86,6 @@ OrcaDEV/
 
 ---
 
-## 📅 Cronograma e Entregas
-- **Fase de Planejamento**: Definição de requisitos e arquitetura (2 semanas).
-- **Desenvolvimento Inicial**: Implementação das funcionalidades básicas (4 semanas).
-- **Teste e Validação**: Testes de funcionalidade e correção de bugs (2 semanas).
-- **Lançamento**: Implementação e lançamento da versão inicial (2 semanas).
-- **Manutenção e Atualizações**: Suporte contínuo e adição de novas funcionalidades (contínuo).
-
----
-
 ## 🔒 Integração e Segurança
 - **Conexão de Fluxos e Equipes**: Integração entre diferentes fluxos de trabalho e equipes para maior colaboração.
 - **Segurança de Dados**: Implementação de criptografia, backups regulares e medidas de segurança robustas.
@@ -103,7 +94,7 @@ OrcaDEV/
 ---
 
 ## ☁️ Tecnologias Adicionais
-- **Cloud Computing**: Uso de AWS, Azure ou Google Cloud para escalabilidade e segurança da aplicação.
+- **Cloud Computing**: Uso de Cloud para escalabilidade e segurança da aplicação.
 - **Ferramentas de Colaboração**: Integração com Slack, Microsoft Teams e outras plataformas de comunicação.
 
 ---
